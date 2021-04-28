@@ -8,8 +8,9 @@ let Qus= prompt('what\'s your name ?');
 
 con= confirm('wlcome '+ Qus+' , lets see how mutch you know about me ') ;
 
-let Qus1= prompt('Do you know who I\'m ?');
+function fun1(){
 
+let Qus1= prompt('Do you know who I\'m ?');
 switch (Qus1.toLowerCase()) {
 
     case 'yes':
@@ -92,9 +93,11 @@ break;
 default:
     alert('invalid answer')
 }
+}
 
 conf= confirm('Thank you '+ Qus+' ,you can know more about me here ') ;
 
+function fun2(){
 let correct_answer=7;
 let i;
 
@@ -122,7 +125,9 @@ for (i = 0; i<4 ; i++) {
 if (i==4){
     alert('you use all of your chances to guess my favorite number , the answer is 7');
 }
+}
 
+function fun3(){
 
 let favAnime;
 favAnime = ['attack on titan','death note','hunterxhunter'];
@@ -146,5 +151,9 @@ for (let i=0 ; i<6 ; i++){
         alert ('your answer is not correct ,please try again');
     }
 }   
+}
 
+fun1();
+fun2();
+fun3();
 alert('your score is '+score+' from 7')
