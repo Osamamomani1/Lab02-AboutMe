@@ -128,7 +128,7 @@ let favAnime;
 favAnime = ['attack on titan','death note','hunterxhunter'];
 let value = false;
 
-for (let i=0 ; 1<6 ; i++){
+for (let i=0 ; i<6 ; i++){
     let Qus7 = prompt('guess one of my favorite 3 anime, you have 6 attempts');
     for (let j=0 ; j<3; j++){
         if (Qus7.toLowerCase() === favAnime[j]){
